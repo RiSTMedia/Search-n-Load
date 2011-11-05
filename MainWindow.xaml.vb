@@ -79,9 +79,7 @@ Namespace searchnload
 
             End While
 
-            'query.StartIndex = loaded + 1
-            'video_feed = request.Get(Of Video)(query)
-
+            
             'ListView1.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.SystemIdle, del, video_feed)
 
 
