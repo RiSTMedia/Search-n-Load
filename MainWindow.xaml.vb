@@ -52,10 +52,7 @@ Namespace searchnload
                 query.Query = searchcontent.Replace(" ", "+")
                 query.SafeSearch = YouTubeQuery.SafeSearchValues.None
             End If
-            If Not searchcontent.Contains("watch?v=") Then
-                query.NumberToRetrieve = 10
-            End If
-
+           
             Dim video_feed As Feed(Of Video) = request.Get(Of Video)(query)
             results = video_feed.TotalResults
             Dim videolist As List(Of Video) = New List(Of Video)
@@ -76,15 +73,9 @@ Namespace searchnload
 
                 ListView1.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.SystemIdle, del, video_feed)
 
-                loaded += 10
+                loaded += video_feed.Entries.Count
 
             End While
-
-            
-            'ListView1.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.SystemIdle, del, video_feed)
-
-
-
 
             Return videolist
 
@@ -174,7 +165,7 @@ Namespace searchnload
         End Sub
 
         Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.Windows.RoutedEventArgs) Handles Button3.Click
-            MediaElement1.Source = New Uri(dl_links(DirectCast(ListView1.SelectedItem, Video).VideoId))
+
         End Sub
     End Class
 
