@@ -64,12 +64,13 @@ Namespace searchnload
             ListView1.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.SystemIdle, del, video_feed)
             Dim loaded As Integer = video_feed.Entries.Count
 
-            If Not islist Then
+            If Not islist And results > 100 Then
                 results = 100
             End If
 
             While loaded < results
                 query.StartIndex = loaded + 1
+
 
                 video_feed = request.Get(Of Video)(query)
 
