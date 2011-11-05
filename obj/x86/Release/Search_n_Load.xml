@@ -1,0 +1,94 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Search_n_Load
+</name>
+</assembly>
+<members>
+<member name="M:Search_n_Load.Application.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="M:Search_n_Load.Application.Main">
+	<summary>
+Application Entry Point.
+</summary>
+</member><member name="T:Search_n_Load.Application">
+	<summary>
+Application
+</summary>
+</member><member name="M:Search_n_Load.searchnload.MainWindow.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:Search_n_Load.searchnload.MainWindow">
+	<summary>
+MainWindow
+</summary>
+</member><member name="M:Search_n_Load.XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+	<summary>
+CreateInstance
+</summary>
+</member><member name="M:Search_n_Load.XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+	<summary>
+GetPropertyValue
+</summary>
+</member><member name="M:Search_n_Load.XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+	<summary>
+SetPropertyValue
+</summary>
+</member><member name="M:Search_n_Load.XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+	<summary>
+CreateDelegate
+</summary>
+</member><member name="M:Search_n_Load.XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+	<summary>
+AddEventHandler
+</summary>
+</member><member name="T:Search_n_Load.XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+	<summary>
+GeneratedInternalTypeHelper
+</summary>
+</member><member name="P:Search_n_Load.My.MyWpfExtension.Application">
+	<summary>
+ Gibt das Anwendungsobjekt für die ausgeführte Anwendung zurück.
+ </summary>
+</member><member name="P:Search_n_Load.My.MyWpfExtension.Computer">
+	<summary>
+ Gibt Informationen über den Hostcomputer zurück.
+ </summary>
+</member><member name="P:Search_n_Load.My.MyWpfExtension.User">
+	<summary>
+ Gibt Informationen über den aktuellen Benutzer zurück. Wenn Sie die Anwendung mit den aktuellen Windows-
+ Anmeldeinformationen ausführen möchten, rufen Sie My.User.InitializeWithWindowsUser() auf.
+ </summary>
+</member><member name="P:Search_n_Load.My.MyWpfExtension.Log">
+	<summary>
+ Gibt das Anwendungsprotokoll zurück. Die Listener können in der Konfigurationsdatei der Anwendung konfiguriert werden.
+ </summary>
+</member><member name="P:Search_n_Load.My.MyWpfExtension.Windows">
+	<summary>
+ Gibt die im Projekt definierte Windows-Auflistung zurück.
+ </summary>
+</member><member name="T:Search_n_Load.My.MyWpfExtension">
+	<summary>
+ Modul zum Definieren der im My-Namespace für WPF verfügbaren Eigenschaften
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Search_n_Load.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Search_n_Load.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Search_n_Load.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
