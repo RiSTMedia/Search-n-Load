@@ -1,4 +1,6 @@
-﻿Imports System.Net
+﻿Imports Vlc.DotNet.Core
+Imports Vlc.DotNet.Wpf
+Imports System.Net
 Imports System.IO
 Imports System.Text.RegularExpressions
 Imports System.ComponentModel
@@ -16,15 +18,30 @@ Namespace searchnload
 
     Class MainWindow
 
+
         Private Sub Window_Loaded(ByVal sender As System.Object, ByVal e As System.Windows.RoutedEventArgs) Handles MyBase.Loaded
             TextBox2.Text = Environment.GetEnvironmentVariable("UserProfile") & "\Downloads"
             ComboBox2.SelectedIndex = 0
+            VlcContext.LibVlcDllsPath = "D:\Projekte\Programme\Search n Load\Search n Load\vlc"
+            VlcContext.StartupOptions.IgnoreConfig = True
+            VlcContext.StartupOptions.AddOption("--play-and-pause")
+            VlcContext.StartupOptions.AddOption("--no-video-title-show")
+            VlcContext.Initialize()
+           
         End Sub
 
         Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.Windows.RoutedEventArgs) Handles Button1.Click
-            ListView1.Items.Clear()
-            Dim del As New search(AddressOf yt_search)
-            del.BeginInvoke(TextBox1.Text, Nothing, Nothing)
+            If Not ComboBox3.Text = "" Then
+                ListView1.Items.Clear()
+                If Not ComboBox3.Items.Contains(ComboBox3.Text) Then
+                    ComboBox3.Items.Add(ComboBox3.Text)
+                End If
+                Dim del As New search(AddressOf yt_search)
+                del.BeginInvoke(ComboBox3.Text, Nothing, Nothing)
+            End If
+
+
+
 
         End Sub
         Delegate Function search(ByVal searchcontent As String) As List(Of Video)
@@ -164,9 +181,16 @@ Namespace searchnload
             TextBox2.Text = dialog.SelectedPath
         End Sub
 
-        Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.Windows.RoutedEventArgs) Handles Button3.Click
+        Private Sub play(ByVal sender As System.Object, ByVal e As System.Windows.Input.MouseButtonEventArgs)
+            myVlcControl.BeginInit()
+            myVlcControl.EndInit()
+            myVlcControl.Play(New Vlc.DotNet.Core.Medias.PathMedia(dl_links(DirectCast(ListView1.SelectedItem, Video).VideoId)))
+            myVlcControl.BringIntoView()
 
         End Sub
+
+
+        
     End Class
 
 

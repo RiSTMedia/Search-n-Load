@@ -24,3 +24,7 @@ D:\Projekte\Programme\Search n Load\Search n Load\obj\x86\Release\GenerateResour
 D:\Projekte\Programme\Search n Load\Search n Load\obj\x86\Release\Search_n_Load.exe
 D:\Projekte\Programme\Search n Load\Search n Load\obj\x86\Release\Search_n_Load.xml
 D:\Projekte\Programme\Search n Load\Search n Load\obj\x86\Release\Search_n_Load.pdb
+D:\Projekte\Programme\Search n Load\Search n Load\bin\Release\Vlc.DotNet.Core.dll
+D:\Projekte\Programme\Search n Load\Search n Load\bin\Release\Vlc.DotNet.Core.Interops.dll
+D:\Projekte\Programme\Search n Load\Search n Load\bin\Release\Vlc.DotNet.Forms.dll
+D:\Projekte\Programme\Search n Load\Search n Load\bin\Release\Vlc.DotNet.Wpf.dll
